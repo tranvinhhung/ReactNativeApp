@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android --port=8088",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "react-native start --port=8088",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/drawer": "^6.4.3",
     "@react-navigation/native-stack": "^6.7.0",
     "@reduxjs/toolkit": "^1.8.3",
     "axios": "^0.27.2",
@@ -33,9 +34,12 @@
     "@react-navigation/native": "^6.0.11",
     "@types/react-redux": "^7.1.24",
     "babel-jest": "^28.1.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.19.0",
     "jest": "^28.1.2",
     "metro-react-native-babel-preset": "^0.71.2",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-reanimated": "^2.9.1",
     "react-test-renderer": "17.0.2"
   },
   "jest": {
